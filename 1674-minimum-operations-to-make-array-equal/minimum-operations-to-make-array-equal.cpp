@@ -1,0 +1,11 @@
+class Solution {
+public:
+    int minOperations(int n) {
+        const int halfSize = n / 2;
+        const int median = (arr(n) + arr(1)) / 2;
+        const int firstDiff = median - arr(1);
+        const int lastDiff = median - arr(halfSize);
+        return (firstDiff + lastDiff) * halfSize / 2;
+    }
+    int arr(int i) { return (i - 1) * 2 + 2; }
+};
