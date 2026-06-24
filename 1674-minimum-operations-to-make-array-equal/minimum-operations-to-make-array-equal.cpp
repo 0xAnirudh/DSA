@@ -7,5 +7,5 @@ public:
         const int lastDiff = median - arr(halfSize);
         return (firstDiff + lastDiff) * halfSize / 2;
     }
-    int arr(int i) { return (i - 1) * 2 + 2; }
+    int arr(int i) { return (i - 1) * 2 + 1; }
 };
